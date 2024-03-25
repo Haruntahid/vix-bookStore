@@ -5,6 +5,7 @@ import ListedBooks from "../Pages/ListedBooks";
 import PagesToRead from "../Pages/PagesToRead";
 import BestSellBook from "../Pages/BestSellBook";
 import Community from "../Pages/Community";
+import BookDetails from "../components/BookDetails";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: () => fetch("../../public/books.json"),
       },
       {
         path: "/listedbooks",
@@ -31,10 +33,11 @@ export const router = createBrowserRouter([
         path: "/community",
         element: <Community />,
       },
-      //   {
-      //     path: "/community",
-      //     element: <Community />,
-      //   },
+      {
+        path: "/bookdetails/:id",
+        element: <BookDetails />,
+        loader: () => fetch("../../public/books.json"),
+      },
     ],
   },
 ]);

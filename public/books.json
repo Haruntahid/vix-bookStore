@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://i.ibb.co/6HbSpX1/pngwing-1.png",
+    "review": "The Silent Patient is a compelling psychological thriller that will keep you on the edge of your seat from start to finish. With its intricate plot and well-developed characters, Alex Michaelides masterfully weaves a tale of mystery and suspense. The unexpected twists and turns will leave you guessing until the very end, making it a true page-turner. Gripping and thought-provoking, this novel is a must-read for fans of the genre.",
+    "totalPages": 336,
+    "rating": 4.2,
+    "category": "Mystery",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 2,
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://i.ibb.co/wCvNMF4/kindpng-7318921.png",
+    "review": "Where the Crawdads Sing is a breathtakingly beautiful novel that transports you to the tranquil marshes of North Carolina. Delia Owens paints a vivid picture of nature and isolation, while also delving deep into themes of love, survival, and resilience. The lyrical prose and compelling storyline make it impossible to put down. This book is a masterpiece of storytelling that will stay with you long after you've turned the last page.",
+    "totalPages": 384,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Nature", "Coming of Age"],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 3,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://i.ibb.co/tQscG09/kindpng-1064993.png",
+    "review": "Educated is a powerful and deeply moving memoir that chronicles Tara Westover's journey from growing up in a strict and abusive household to pursuing education against all odds. Her courage and determination in the face of adversity are truly inspiring. Through her eloquent writing, Westover invites readers to reflect on the importance of education, freedom, and self-discovery. This book is a testament to the resilience of the human spirit and the transformative power of knowledge.",
+    "totalPages": 352,
+    "rating": 4.4,
+    "category": "Biography",
+    "tags": ["Memoir", "Education"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "image": "https://i.ibb.co/BVwnspH/kindpng-4022054-1.png",
+    "review": "Step into the enchanting world of The Night Circus, where magic and mystery await at every turn. Erin Morgenstern's vivid imagination and lyrical prose create a mesmerizing experience that will leave you spellbound. The intricate plot, richly drawn characters, and evocative descriptions of the circus evoke a sense of wonder and awe. This is a novel that transcends genres, blending elements of fantasy, romance, and mystery into a captivating story that will stay with you long after you've finished reading.",
+    "totalPages": 400,
+    "rating": 4.3,
+    "category": "Fantasy",
+    "tags": ["Magic", "Romance"],
+    "publisher": "Doubleday",
+    "yearOfPublishing": 2011
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://i.ibb.co/Hn02xWG/kindpng-81724-1.png",
+    "review": "Paulo Coelho's The Alchemist is a timeless tale of self-discovery, destiny, and the journey of the soul. Set against the backdrop of the Spanish countryside, this philosophical fable follows the adventures of Santiago, a young shepherd who embarks on a quest to find his personal legend. Along the way, he encounters wise mentors, learns valuable lessons, and discovers the true meaning of life and happiness. The Alchemist is a thought-provoking and inspiring read that encourages readers to pursue their dreams and listen to the voice of their hearts.",
+    "totalPages": 208,
+    "rating": 4.1,
+    "category": "Fiction",
+    "tags": ["Philosophy", "Adventure"],
+    "publisher": "HarperCollins",
+    "yearOfPublishing": 1988
+  },
+  {
+    "bookId": 6,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/XXGgPgb/kindpng-2193744-1.png",
+    "review": "George Orwell's 1984 is a hauntingly prophetic dystopian novel that remains as relevant today as it was when it was first published. Set in a totalitarian society where individuality is suppressed and truth is manipulated, this cautionary tale explores the dangers of unchecked government power and the erosion of personal freedoms. Orwell's chilling vision of a dystopian future serves as a stark warning against the dangers of authoritarianism and the importance of safeguarding democracy. A masterpiece of political fiction, 1984 is a must-read for anyone concerned about the future of society.",
+    "totalPages": 328,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  }
+]
