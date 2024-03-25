@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 function Header() {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 my-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,33 +45,69 @@ function Header() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-3xl font-bold">Vix-BookStore</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 space-x-5 text-[18px]">
             <li>
-              <a>Item 1</a>
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive ? "text-[#23BE0A] border border-[#23BE0A]" : ""
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <NavLink
+                to={"/listedbooks"}
+                className={({ isActive }) =>
+                  isActive ? "text-[#23BE0A] border border-[#23BE0A]" : ""
+                }
+              >
+                Listed Books
+              </NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink
+                to={"/pagesread"}
+                className={({ isActive }) =>
+                  isActive ? "text-[#23BE0A] border border-[#23BE0A]" : ""
+                }
+              >
+                Pages to Read
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/bestsell"}
+                className={({ isActive }) =>
+                  isActive ? "text-[#23BE0A] border border-[#23BE0A]" : ""
+                }
+              >
+                Best Sell Book
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/community"}
+                className={({ isActive }) =>
+                  isActive ? "text-[#23BE0A] border border-[#23BE0A]" : ""
+                }
+              >
+                Community
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn px-4 py-3 bg-[#23BE0A] rounded-xl text-white">
+            Sign In
+          </a>
+          <a className="btn px-4 py-3 bg-[#59C6D2] rounded-xl ml-3 text-white">
+            Sign Up
+          </a>
         </div>
       </div>
     </div>
