@@ -1,11 +1,16 @@
 // import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { setBookInLs } from "../utils/localStorage";
+import { setBookInLs, setWishlistInLs } from "../utils/localStorage";
 
 function BookDetails() {
   // handel read button
   const handelReadBtn = (bookId) => {
     setBookInLs(bookId);
+  };
+
+  // handel wishlist btn
+  const handelWishlistBtn = (bookId) => {
+    setWishlistInLs(bookId);
   };
 
   //   const [books, setBooks] = useState([]);
@@ -85,7 +90,10 @@ function BookDetails() {
             >
               Read
             </button>
-            <button className="btn px-7 py-1 bg-[#50B1C9] text-white border border-gray-200">
+            <button
+              onClick={() => handelWishlistBtn(bookId)}
+              className="btn px-7 py-1 bg-[#50B1C9] text-white border border-gray-200"
+            >
               Wishlist
             </button>
           </div>
