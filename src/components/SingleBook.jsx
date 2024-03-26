@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function SingleWishlistBook({ book }) {
+function SingleBook({ book }) {
   const {
     bookId,
     author,
@@ -58,8 +58,8 @@ function SingleWishlistBook({ book }) {
   );
 }
 
-SingleWishlistBook.propTypes = {
+SingleBook.propTypes = {
   book: PropTypes.object,
 };
 
-export default SingleWishlistBook;
+export default SingleBook;

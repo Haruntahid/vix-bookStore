@@ -6,13 +6,13 @@ import PagesToRead from "../Pages/PagesToRead";
 import BestSellBook from "../Pages/BestSellBook";
 import Community from "../Pages/Community";
 import BookDetails from "../components/BookDetails";
-import Wishlist from "../components/Wishlist";
-import ReadBooks from "../components/ReadBooks";
+import NotFound from "../Pages/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <NotFound />,
     children: [
       {
         path: "/",
@@ -22,19 +22,9 @@ export const router = createBrowserRouter([
       {
         path: "/listedbooks",
         element: <ListedBooks />,
-        children: [
-          {
-            index: true,
-            element: <ReadBooks />,
-            loader: () => fetch("../../public/books.json"),
-          },
-          {
-            path: "wishlist",
-            element: <Wishlist />,
-            loader: () => fetch("../../public/books.json"),
-          },
-        ],
+        loader: () => fetch("../../public/books.json"),
       },
+
       {
         path: "/pagesread",
         element: <PagesToRead />,

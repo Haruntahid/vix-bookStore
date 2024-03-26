@@ -31,7 +31,6 @@ function BookDetails() {
     yearOfPublishing,
     rating,
   } = currentBookId;
-  // console.log(currentBookId);
 
   return (
     <>
