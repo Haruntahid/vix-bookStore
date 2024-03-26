@@ -1,7 +1,13 @@
 // import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { setBookInLs } from "../utils/localStorage";
 
 function BookDetails() {
+  // handel read button
+  const handelReadBtn = (bookId) => {
+    setBookInLs(bookId);
+  };
+
   //   const [books, setBooks] = useState([]);
   //   useEffect(() => {
   //     fetch("../../public/books.json")
@@ -15,6 +21,7 @@ function BookDetails() {
   const currentBookId = books.find((book) => book.bookId == id);
 
   const {
+    bookId,
     author,
     image,
     bookName,
@@ -70,6 +77,17 @@ function BookDetails() {
             <p className="text-[#131313B3]">
               Rating : <span className="font-bold text-black">{rating}</span>
             </p>
+          </div>
+          <div className="mt-8 flex gap-5">
+            <button
+              onClick={() => handelReadBtn(bookId)}
+              className="btn px-7 py-1 border border-gray-200"
+            >
+              Read
+            </button>
+            <button className="btn px-7 py-1 bg-[#50B1C9] text-white border border-gray-200">
+              Wishlist
+            </button>
           </div>
         </div>
       </div>

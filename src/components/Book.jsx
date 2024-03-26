@@ -3,7 +3,7 @@ import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Book({ book }) {
-  console.log(book);
+  // console.log(book);
   const { bookId, image, tags, author, bookName, category, rating } = book;
   return (
     <>
@@ -12,7 +12,7 @@ function Book({ book }) {
         className="card  bg-base-100 shadow-xl p-6 border border-[#13131326]"
       >
         <div className="bg-[#F3F3F3] w-full h-[300px] flex justify-center items-center rounded-2xl">
-          <img className="w-[134px] h-[166px]" src={image} alt="Shoes" />
+          <img className="w-[134px] h-[166px]" src={image} alt="book" />
         </div>
         <div className="">
           <div className="flex gap-4 my-4">
