@@ -8,18 +8,11 @@ function BookDetails() {
     setBookInLs(bookId);
   };
 
+  const books = useLoaderData();
   // handel wishlist btn
   const handelWishlistBtn = (bookId) => {
     setWishlistInLs(bookId);
   };
-
-  //   const [books, setBooks] = useState([]);
-  //   useEffect(() => {
-  //     fetch("../../public/books.json")
-  //       .then((res) => res.json())
-  //       .then((data) => setBooks(data));
-  //   }, []);
-  const books = useLoaderData();
 
   const { id } = useParams();
 
@@ -38,7 +31,7 @@ function BookDetails() {
     yearOfPublishing,
     rating,
   } = currentBookId;
-  console.log(currentBookId);
+  // console.log(currentBookId);
 
   return (
     <>

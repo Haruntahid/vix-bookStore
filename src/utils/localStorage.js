@@ -12,9 +12,9 @@ export const setBookInLs = (id) => {
   if (!storeBooks.includes(id)) {
     storeBooks.push(id);
     localStorage.setItem("book", JSON.stringify(storeBooks));
-    toast.success("added");
+    toast.success("Added as Read");
   } else {
-    toast.error("can't added");
+    toast.error("Book Already in Read list");
   }
 };
 
@@ -27,12 +27,13 @@ export const getWishlistFromLS = () => {
 };
 
 export const setWishlistInLs = (id) => {
-  const storeWishlist = getBookFromLS();
-  if (!storeWishlist.includes(id)) {
-    storeWishlist.push(id);
-    localStorage.setItem("book", JSON.stringify(storeWishlist));
-    toast.success("added");
+  const getStoredReadBook = getBookFromLS();
+  const wishlist = getWishlistFromLS();
+  if (!getStoredReadBook.includes(id) && !wishlist.includes(id)) {
+    wishlist.push(id);
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    toast.success("Added as Wishlist");
   } else {
-    toast.error("can't added");
+    toast.error("Book already in Read list.");
   }
 };
