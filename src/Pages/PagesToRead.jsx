@@ -83,11 +83,11 @@ function PagesToRead() {
       {data.length === 0 && (
         <div className="flex justify-center items-center flex-col">
           <img
-            className="w-[40%]"
+            className="w-[80%] lg:w-[40%]"
             src="https://i.ibb.co/sqVWHy2/insert-block-concept-illustration-114360-4106.jpg"
             alt=""
           />
-          <p className="text-3xl text-center">
+          <p className="text-2xl lg:text-3xl text-center">
             Uh-oh! Your reading list appears to be empty. <br /> Start adding
             books to see them visualized on the Page.
           </p>
@@ -95,7 +95,7 @@ function PagesToRead() {
       )}
 
       {data.length > 0 && (
-        <div className="container ">
+        <div className="container h-[calc(100vh-298px)]">
           <ResponsiveContainer width="100%" height={500}>
             <BarChart className="mx-auto" data={data}>
               <XAxis

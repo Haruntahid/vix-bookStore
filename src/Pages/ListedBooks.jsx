@@ -145,13 +145,13 @@ function ListedBooks() {
       {tab === 0 && (
         <>
           {displayList.length === 0 && (
-            <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center items-center flex-col px-5">
               <img
-                className="w-[20%]"
+                className="w-[50%] lg:w-[20%]"
                 src="https://i.ibb.co/sqVWHy2/insert-block-concept-illustration-114360-4106.jpg"
                 alt=""
               />
-              <p className="text-3xl text-center">
+              <p className="text-xl lg:text-3xl text-center">
                 Your reading list appears to be empty.
               </p>
             </div>
@@ -166,13 +166,13 @@ function ListedBooks() {
       {tab === 1 && (
         <>
           {displayWishlist.length === 0 && (
-            <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center items-center flex-col px-5">
               <img
-                className="w-[20%]"
+                className="w-[50%] lg:w-[20%]"
                 src="https://i.ibb.co/sqVWHy2/insert-block-concept-illustration-114360-4106.jpg"
                 alt=""
               />
-              <p className="text-3xl text-center">
+              <p className="text-xl lg:text-3xl text-center">
                 Your Wishlist list appears to be empty.
               </p>
             </div>

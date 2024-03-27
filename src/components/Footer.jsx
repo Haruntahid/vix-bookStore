@@ -1,9 +1,11 @@
 function Footer() {
   return (
     <>
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+      <footer className="footer footer-center mt-24 p-4 bg-black text-base-content">
         <aside>
-          <p>Copyright © 2024 - All right reserved by Vix-BookStore Ltd</p>
+          <p className="text-white">
+            Copyright © 2024 - All right reserved by Vix-BookStore Ltd
+          </p>
         </aside>
       </footer>
     </>

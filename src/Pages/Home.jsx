@@ -4,7 +4,7 @@ import Book from "../components/Book";
 
 function Home() {
   const books = useLoaderData();
-  // console.log(books);
+  console.log(books);
   return (
     <div>
       <Banner />
@@ -13,7 +13,7 @@ function Home() {
           All Books
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          {books.map((book) => (
+          {books?.map((book) => (
             <Book key={book.bookId} book={book} />
           ))}
         </div>
