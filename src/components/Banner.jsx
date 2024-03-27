@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Banner() {
   return (
     <>
@@ -6,10 +8,13 @@ function Banner() {
           <p className="text-3xl lg:text-6xl font-bold">
             Books to freshen up <br /> <span>your bookshelf</span>
           </p>
-          <div className="text-center lg:text-left">
-            <button className="px-4 lg:px-7 py-3 lg:py-5 bg-[#23BE0A] text-white lg:text-xl mt-5 lg:mt-12 lg:font-bold rounded-lg">
+          <div className="text-center lg:text-left mt-5 lg:mt-12">
+            <Link
+              to={"/listedbooks"}
+              className="px-4 lg:px-7 py-3 lg:py-5 bg-[#23BE0A] text-white lg:text-xl  lg:font-bold rounded-lg"
+            >
               View The List
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center">

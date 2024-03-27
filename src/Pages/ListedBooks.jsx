@@ -143,18 +143,46 @@ function ListedBooks() {
       </div>
       {/* <Outlet readBook={readBook} /> */}
       {tab === 0 && (
-        <div className="flex flex-col gap-6">
-          {displayList.map((book) => (
-            <SingleBook key={book.bookId} book={book} />
-          ))}
-        </div>
+        <>
+          {displayList.length === 0 && (
+            <div className="flex justify-center items-center flex-col">
+              <img
+                className="w-[20%]"
+                src="https://i.ibb.co/sqVWHy2/insert-block-concept-illustration-114360-4106.jpg"
+                alt=""
+              />
+              <p className="text-3xl text-center">
+                Your reading list appears to be empty.
+              </p>
+            </div>
+          )}
+          <div className="flex flex-col gap-6">
+            {displayList.map((book) => (
+              <SingleBook key={book.bookId} book={book} />
+            ))}
+          </div>
+        </>
       )}
       {tab === 1 && (
-        <div className="flex flex-col gap-6">
-          {displayWishlist.map((book) => (
-            <SingleBook key={book.bookId} book={book} />
-          ))}
-        </div>
+        <>
+          {displayWishlist.length === 0 && (
+            <div className="flex justify-center items-center flex-col">
+              <img
+                className="w-[20%]"
+                src="https://i.ibb.co/sqVWHy2/insert-block-concept-illustration-114360-4106.jpg"
+                alt=""
+              />
+              <p className="text-3xl text-center">
+                Your Wishlist list appears to be empty.
+              </p>
+            </div>
+          )}
+          <div className="flex flex-col gap-6">
+            {displayWishlist.map((book) => (
+              <SingleBook key={book.bookId} book={book} />
+            ))}
+          </div>
+        </>
       )}
     </>
   );
