@@ -69,8 +69,10 @@ function ListedBooks() {
 
   return (
     <>
-      <div className="py-14 bg-[#1313130D] rounded-3xl">
-        <h2 className="text-center text-5xl font-medium ">Listed Books</h2>
+      <div className="py-7 lg:py-14 bg-[#1313130D] rounded-3xl">
+        <h2 className="text-center text-3xl lg:text-5xl font-medium">
+          Listed Books
+        </h2>
       </div>
       <div className="mt-4 mb-14 flex justify-center">
         <div className="dropdown">
@@ -79,7 +81,7 @@ function ListedBooks() {
           </div>
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48"
           >
             <li>
               <a onClick={() => handelFilter("Rating")}>Rating</a>

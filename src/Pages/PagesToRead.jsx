@@ -1,4 +1,13 @@
-import { BarChart, Bar, XAxis, YAxis, Cell, LabelList, Label } from "recharts";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Cell,
+  LabelList,
+  Label,
+  ResponsiveContainer,
+} from "recharts";
 const data = [
   { bookName: "The Silent Patient", totalPages: 336, color: "#8884d8" },
   { bookName: "Where the Crawdads Sing", totalPages: 384, color: "#82ca9d" },
@@ -27,27 +36,33 @@ function PagesToRead() {
     <div>
       {/* <h2>pages to read</h2> */}
       <div className="container ">
-        <BarChart className="mx-auto" width={1400} height={600} data={data}>
-          <XAxis
-            dataKey="bookName"
-            // label={{ value: "pv of page", position: "insideBottom" }}
-          />
-          {/* <Label value="Names of books" offset={0} position="bottom" /> */}
-          <YAxis
-            label={{
-              value: "Number of Book pages",
-              angle: -90,
-              position: "insideLeft",
-            }}
-          />
-          {/* <Tooltip /> */}
-          <Bar dataKey="totalPages" shape={<TriangleBar />}>
-            <LabelList dataKey="totalPages" position="insideTop" angle="360" />
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={entry.color} />
-            ))}
-          </Bar>
-        </BarChart>
+        <ResponsiveContainer width="100%" height={500}>
+          <BarChart className="mx-auto" data={data}>
+            <XAxis
+              dataKey="bookName"
+              // label={{ value: "pv of page", position: "insideBottom" }}
+            />
+            {/* <Label value="Names of books" offset={0} position="bottom" /> */}
+            <YAxis
+              label={{
+                value: "Number of Book pages",
+                angle: -90,
+                position: "insideLeft",
+              }}
+            />
+            {/* <Tooltip /> */}
+            <Bar dataKey="totalPages" shape={<TriangleBar />}>
+              <LabelList
+                dataKey="totalPages"
+                position="insideTop"
+                angle="360"
+              />
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );

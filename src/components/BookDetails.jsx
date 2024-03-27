@@ -34,13 +34,15 @@ function BookDetails() {
 
   return (
     <>
-      <div className="flex gap-14">
-        <div className="w-2/5 flex-grow p-20 bg-[#1313130D] rounded-3xl flex items-center justify-center">
+      <div className="flex flex-col lg:flex-row gap-7 lg:gap-14">
+        <div className="w-full lg:w-2/5 flex-grow p-20 bg-[#1313130D] rounded-3xl flex items-center justify-center">
           <img className="w-[75%]" src={image} alt="" />
         </div>
-        <div className="w-3/5">
-          <h2 className="font-bold text-4xl">{bookName}</h2>
-          <p className="font-medium text-xl">By : {author}</p>
+        <div className="w-full lg:w-3/5 p-4">
+          <h2 className="font-bold text-3xl lg:text-4xl">{bookName}</h2>
+          <p className="font-medium mt-2 text-gray-500 lg:text-xl">
+            By : {author}
+          </p>
           <div className="divider"></div>
           <p className="font-medium text-xl">{category}</p>
           <div className="divider"></div>

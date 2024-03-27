@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 function Header() {
   return (
     <div>
-      <div className="navbar bg-base-100 my-10">
+      <div className="navbar bg-base-100 my-2 lg:my-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -78,7 +78,10 @@ function Header() {
               </li>
             </ul>
           </div>
-          <Link to={"/"} className="btn btn-ghost text-3xl font-bold">
+          <Link
+            to={"/"}
+            className="btn btn-ghost text-2xl lg:text-3xl font-medium lg:font-bold"
+          >
             Vix-BookStore
           </Link>
         </div>
@@ -137,12 +140,14 @@ function Header() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn px-4 py-3 bg-[#23BE0A] rounded-xl text-white">
-            Sign In
-          </a>
-          <a className="btn px-4 py-3 bg-[#59C6D2] rounded-xl ml-3 text-white">
-            Sign Up
-          </a>
+          <div className="hidden lg:block">
+            <a className="btn px-4 py-3 bg-[#23BE0A] rounded-xl text-white">
+              Sign In
+            </a>
+            <a className="btn px-4 py-3 bg-[#59C6D2] rounded-xl ml-3 text-white">
+              Sign Up
+            </a>
+          </div>
         </div>
       </div>
     </div>
